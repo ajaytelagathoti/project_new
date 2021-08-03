@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RESUME</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<style type="text/css">
+	.parent{
+		display: flex;
+		flex-direction:row;
+		width: 100%;
+		padding:1%;
+		margin: 1%;
+   border:2px solid maroon ;
+   text-align: center;
+   background-color: skyblue;
+	}
+	.card{
+		padding: 1%;
+		margin: 5%;
+		border: 2px dotted blue;
+		box-shadow: 10px 10px 10px;
+		background-color: #2E4053;
+		
+		width: 300px;
+	}
+	h1{
+		color: yellow;
+	}
+	h2{
+		color: yellow;
+	}
+	a{
+		border: 2px solid white;
+		color: yellow;
+	}
+</style>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        https://api.apispreadsheets.com/data/16354/,
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
+	
+</head>
+<body>
+
+	<div class="parent">
+		<div class="card">
+			<img src="images.png" class="card-img">
+		<h1 class="card-title">Telagathoti Ajay</h1>
+		<h2 class="card-text">ajaytelagathoti@gmail.com</h2>
+		
+<div>
+	<a href="Resume.html" >View Resume</a>
+</div>
+		
+		</div>
+		<div class="card">
+			
+		<div>
+	<a href="Resume1.html" >View Resume</a>
+</div>
+<label for="User Name">User Name</label>
+    <input type="Email" name="User Name" placeholder="Enter username"><br><br>
+    <label for="Password">Password:</label>
+    <input type="Password" name="Password" placeholder="Enter Password"><br><br>
+    <button>Signin</button>
+    <button>Forget password</button>
+	
+
+		
+		
+		</div>
+		
+	</div>
+	
+
+</body>
+</html>
